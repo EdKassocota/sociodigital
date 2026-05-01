@@ -3,9 +3,9 @@ import { easeCinematic } from '@/lib/utils';
 
 export default function Trailer() {
   const images = [
-    "https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop"
+    "/imgs/img8.jpg",
+    "/imgs/img9.jpg",
+    "/imgs/img10.jpg"
   ];
 
   return (

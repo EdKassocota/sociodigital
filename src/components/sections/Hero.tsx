@@ -72,8 +72,8 @@ export default function Hero() {
               className="relative rounded-2xl overflow-hidden aspect-[4/5] object-cover shadow-2xl shadow-black/5 border border-black/5 bg-white"
             >
               <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" 
-                alt="Corporate Architecture"
+                src="/imgs/img1.jpg" 
+                alt="Sócio Digital Hero"
                 className="w-full h-full object-cover scale-[1.05] origin-center"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#66CDD9]/20 via-transparent to-[#F28627]/10 mix-blend-overlay" />

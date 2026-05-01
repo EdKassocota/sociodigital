@@ -5,23 +5,23 @@ const cases = [
   {
     title: "Mastercontas",
     subtitle: "Reconhecimento & Colaboração",
-    img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2064&auto=format&fit=crop"
+    img: "/imgs/img11.jpg"
   },
   {
     title: "Mulheres de Contas",
     subtitle: "Empoderamento & Educação Financeira",
-    img: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop"
+    img: "/imgs/img12.jpg"
   },
   {
     title: "Impacto Angolano",
     subtitle: "Tecnologia & Desenvolvimento",
-    img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop"
+    img: "/imgs/img1.jpg"
   }
 ];
 
 export default function StickyReveal() {
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
@@ -30,7 +30,7 @@ export default function StickyReveal() {
   return (
     <section ref={containerRef} id="casos" className="relative h-[400vh] bg-brand-dark text-white">
       <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
-        
+
         {cases.map((proj, idx) => {
           // Calculate when each item should be visible
           const start = idx / cases.length;
@@ -61,17 +61,17 @@ export default function StickyReveal() {
           return (
             <motion.div key={idx} style={{ opacity }} className="absolute inset-0 w-full h-full flex flex-col justify-center items-center p-6 text-center">
               <motion.div style={{ scale }} className="absolute inset-0 w-full h-full z-0">
-                 <img src={proj.img} alt={proj.title} className="w-full h-full object-cover opacity-40 mix-blend-luminosity" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent" />
+                <img src={proj.img} alt={proj.title} className="w-full h-full object-cover opacity-40 mix-blend-luminosity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#66CDD9]/60 via-[#66CDD9]/30 to-transparent" />
               </motion.div>
-              
+
               <div className="relative z-10 flex flex-col items-center">
-                 <motion.span style={{ y: yText }} className="text-brand-orange uppercase tracking-[0.2em] text-sm font-semibold mb-4 block">
-                    {proj.subtitle}
-                 </motion.span>
-                 <motion.h2 style={{ y: yText }} className="font-display text-6xl md:text-8xl font-medium tracking-tight text-white mb-8">
-                    {proj.title}
-                 </motion.h2>
+                <motion.span style={{ y: yText }} className="text-brand-orange uppercase tracking-[0.2em] text-sm font-semibold mb-4 block">
+                  {proj.subtitle}
+                </motion.span>
+                <motion.h2 style={{ y: yText }} className="font-display text-6xl md:text-8xl font-medium tracking-tight text-white mb-8">
+                  {proj.title}
+                </motion.h2>
               </div>
             </motion.div>
           );

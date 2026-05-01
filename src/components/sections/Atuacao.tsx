@@ -37,8 +37,8 @@ export default function Atuacao() {
             >
               <motion.img 
                 style={{ y: imgY }}
-                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" 
-                alt="Produção de Conteúdo B2B"
+                src="/imgs/img8.jpg" 
+                alt="Produção de Conteúdo Sócio Digital"
                 className="w-full h-[120%] object-cover absolute top-[-10%] origin-center"
               />
               <div className="absolute inset-0 bg-[#66CDD9]/10 mix-blend-multiply" />

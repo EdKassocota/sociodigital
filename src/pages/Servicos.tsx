@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import CTA from '@/components/sections/CTA';
+import SEO from '@/components/SEO';
 
 const servicos = [
   {
@@ -9,35 +10,35 @@ const servicos = [
     title: "Estratégia de Posicionamento Digital",
     caption: "Auditoria & Planeamento",
     desc: "Desenhamos o mapa completo de como a sua empresa será percebida no digital. Avaliamos a concorrência, identificamos o tom de voz ideal e definimos em quais canais corporativos (LinkedIn, websites institucionais) deverá concentrar esforços.",
-    img: "https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop"
+    img: "/imgs/img3.jpg"
   },
   {
     id: "conteudo",
     title: "Produção de Conteúdos Audiovisuais",
     caption: "Cinematografia B2B",
     desc: "Produção de imagens e vídeos de alto padrão. Cuidamos do guião à captação, focando em mensagens corporativas assertivas, vídeos institucionais, entrevistas com C-Level e cobertura documental que eleva a credibilidade.",
-    img: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop"
+    img: "/imgs/img2.jpg"
   },
   {
     id: "identidade",
     title: "Identidade Visual para o Digital",
     caption: "Design Premium",
     desc: "Garantimos a coerência estética global da sua marca. Desenvolvemos manuais de identidade digital aplicáveis a redes sociais, propostas comerciais e landing pages, mantendo o padrão executivo e evitando distorções criativas.",
-    img: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2000&auto=format&fit=crop"
+    img: "/imgs/img8.jpg"
   },
   {
     id: "redes",
     title: "Presença em Redes Profissionais",
     caption: "Gestão Ativa",
     desc: "O LinkedIn não é o Instagram. Fazemos a gestão e o crescimento estratégico da sua presença corporativa com foco na rede B2B, atuando na curadoria de conteúdos para thought leadership e atração qualitativa de stakeholders.",
-    img: "https://images.unsplash.com/photo-1611135607317-063a3e618b76?q=80&w=2070&auto=format&fit=crop"
+    img: "/imgs/img9.jpg"
   },
   {
     id: "eventos",
     title: "Acompanhamento de Eventos",
     caption: "Cobertura Imediata",
     desc: "Garantimos a presença digital e recolha de material em tempo real durante feiras, cimeiras e exposições. A imagem pública da empresa em momentos de networking é registada com sofisticação e partilhada de forma oportuna com os parceiros.",
-    img: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop"
+    img: "/imgs/img10.jpg"
   }
 ];
 
@@ -60,6 +61,10 @@ export default function Servicos() {
 
   return (
     <div className="bg-brand-bg relative overflow-hidden">
+      <SEO 
+        title="Nossos Serviços" 
+        description="Estratégia de posicionamento, produção audiovisual B2B, identidade visual premium e gestão de redes profissionais."
+      />
       <HeroSection />
       
       <div className="relative w-full bg-gradient-to-br from-[#f8f9fa] to-[#eef2f5]">

@@ -2,9 +2,15 @@ import { motion } from 'motion/react';
 import { Mail, Phone, Instagram, Facebook } from 'lucide-react';
 import { easeCinematic } from '@/lib/utils';
 
+import SEO from '@/components/SEO';
+
 export default function Contactos() {
   return (
     <div className="bg-brand-bg relative overflow-hidden min-h-screen pt-48 pb-32">
+      <SEO 
+        title="Contactos" 
+        description="Entre em contacto com a Sócio Digital. Agende uma reunião de diagnóstico para a sua estratégia de marketing B2B e autoridade digital."
+      />
       <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-brand-orange/10 rounded-full blur-[120px] pointer-events-none mix-blend-multiply" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-blue/10 rounded-full blur-[100px] pointer-events-none opacity-50" />
 

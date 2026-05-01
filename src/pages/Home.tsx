@@ -6,9 +6,15 @@ import CircleStrategy from '@/components/sections/CircleStrategy';
 import Trailer from '@/components/sections/Trailer';
 import CTA from '@/components/sections/CTA';
 
+import SEO from '@/components/SEO';
+
 export default function Home() {
   return (
     <div className="w-full">
+      <SEO 
+        title="Arquitetura da sua reputação digital" 
+        description="Assessoria estratégica para operações B2B globais. Transformamos reputação sólida em alcance influente e direcionado."
+      />
       <Hero />
       <Atuacao />
       <MetodoCarousel />

@@ -6,22 +6,22 @@ const cards = [
   {
     title: "Analisar",
     desc: "Compreensão profunda do mercado, concorrentes e do posicionamento atual.",
-    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+    img: "/imgs/img2.jpg"
   },
   {
     title: "Planear",
     desc: "Construção de uma rota estratégica alinhada aos objetivos do negócio.",
-    img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+    img: "/imgs/img3.jpg"
   },
   {
     title: "Executar",
     desc: "Ação rigorosa e consistente baseada no plano estabelecido.",
-    img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+    img: "/imgs/img8.jpg"
   },
   {
     title: "Melhorar",
     desc: "Fecho do ciclo com análise de dados e otimização contínua.",
-    img: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop"
+    img: "/imgs/img9.jpg"
   }
 ];
 
