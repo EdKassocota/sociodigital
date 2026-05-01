@@ -37,8 +37,12 @@ export default function Navbar() {
         }`}
       >
         <nav className="w-full max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          <Link to="/" className="flex items-center group relative z-[60]">
-            <img src="/logo.png" alt="Sócio Digital Logo" className="h-10 w-auto object-contain" />
+          <Link to="/" className="flex items-center gap-3 group relative z-[60]">
+            <img src="/logo.png" alt="Sócio Digital Logo" className="h-9 w-auto object-contain" />
+            <div className="flex items-center font-display font-medium text-xl md:text-2xl tracking-tighter">
+              <span className="text-[#F28627]">Sócio</span>
+              <span className="text-[#66CDD9] ml-1">Digital</span>
+            </div>
           </Link>
           
           <div className="hidden md:flex items-center gap-8 font-sans text-sm font-medium text-brand-dark/70 tracking-wide">
@@ -72,8 +76,12 @@ export default function Navbar() {
             className="fixed inset-0 z-[100] bg-brand-bg flex flex-col"
           >
             <div className="flex items-center justify-between px-6 py-6 border-b border-black/5">
-              <div className="flex items-center">
-                <img src="/logo.png" alt="Sócio Digital Logo" className="h-10 w-auto object-contain" />
+              <div className="flex items-center gap-3">
+                <img src="/logo.png" alt="Sócio Digital Logo" className="h-9 w-auto object-contain" />
+                <div className="flex items-center font-display font-medium text-xl tracking-tighter">
+                  <span className="text-[#F28627]">Sócio</span>
+                  <span className="text-[#66CDD9] ml-1">Digital</span>
+                </div>
               </div>
               <button onClick={closeMenu} className="p-2 -mr-2 text-brand-dark">
                 <X className="w-6 h-6" />

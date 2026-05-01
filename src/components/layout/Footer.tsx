@@ -11,8 +11,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-8 mb-20">
           <div className="md:col-span-5">
-            <Link to="/" className="mb-8 group inline-flex">
-                <img src="/logo.png" alt="Sócio Digital Logo" className="h-12 w-auto object-contain brightness-0 invert" />
+            <Link to="/" className="mb-8 group inline-flex items-center gap-3">
+                <img src="/logo.png" alt="Sócio Digital Logo" className="h-10 w-auto object-contain brightness-0 invert" />
+                <div className="flex items-center font-display font-medium text-2xl tracking-tighter">
+                  <span className="text-[#F28627]">Sócio</span>
+                  <span className="text-white ml-1">Digital</span>
+                </div>
             </Link>
             <p className="text-white/50 text-base max-w-sm font-sans tracking-wide leading-relaxed">
               Assessoria estratégica de marketing para empresas B2B e instituições. A sua frente de crescimento global começa aqui.
