@@ -6,18 +6,11 @@ import { easeCinematic } from '@/lib/utils';
 
 export default function Navbar() {
   const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious() ?? 0;
-    if (latest > previous && latest > 150) {
-      setHidden(true);
-    } else {
-      setHidden(false);
-    }
     setScrolled(latest > 50);
   });
 
@@ -25,13 +18,7 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.header
-        variants={{
-          visible: { y: 0 },
-          hidden: { y: "-100%" },
-        }}
-        animate={hidden ? "hidden" : "visible"}
-        transition={{ duration: 0.6, ease: easeCinematic }}
+      <header
         className={`fixed top-0 inset-x-0 z-50 transition-colors duration-500 flex justify-center ${
           scrolled ? "bg-brand-bg/80 backdrop-blur-md border-b border-black/5 py-4" : "bg-transparent py-6"
         }`}
@@ -64,7 +51,7 @@ export default function Navbar() {
             <Menu className="w-6 h-6" />
           </button>
         </nav>
-      </motion.header>
+      </header>
 
       <AnimatePresence>
         {mobileMenuOpen && (
