@@ -148,11 +148,11 @@ function ServiceBlock({ data, index }: { data: any, index: number }) {
                     className={`w-full max-w-2xl aspect-[4/5] object-cover rounded-2xl overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] relative ${isEven ? 'lg:origin-right origin-center' : 'lg:origin-left origin-center'}`}
                  >
                     <motion.img 
-                       whileHover={{ scale: 1.05 }}
-                       transition={{ duration: 1, ease: "easeOut" }}
+                       style={{ y: imgY }}
                        src={data.img} 
                        alt={data.title} 
-                       className="w-full h-full object-cover" 
+                       loading="lazy"
+                       className="w-full h-[120%] object-cover absolute top-[-10%] origin-center" 
                     />
                     <div className={`absolute inset-0 bg-gradient-to-tr ${isEven ? 'from-[#F28627]/10' : 'from-[#66CDD9]/10'} via-transparent to-transparent mix-blend-overlay pointer-events-none`} />
                  </motion.div>

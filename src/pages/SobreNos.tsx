@@ -42,7 +42,7 @@ export default function SobreNos() {
           transition={{ duration: 1.5, ease: easeCinematic }}
           className="aspect-video w-full rounded-2xl overflow-hidden relative shadow-2xl z-20 bg-white"
         >
-          <img src="/imgs/img1.jpg" alt="Equipa Sócio Digital" className="w-full h-full object-cover" />
+          <img src="/imgs/img1.jpg" alt="Equipa Sócio Digital" loading="lazy" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-tr from-[#66CDD9]/20 to-transparent mix-blend-overlay" />
         </motion.div>

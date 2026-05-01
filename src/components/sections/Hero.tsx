@@ -27,8 +27,8 @@ export default function Hero() {
 
           <div className="lg:col-span-6 flex flex-col z-20">
             <motion.h1
-              initial={{ opacity: 0, filter: "blur(12px)", y: 40 }}
-              animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: easeCinematic, delay: 0.1 }}
               className="font-display text-5xl md:text-7xl font-medium tracking-tight leading-[1.05] text-brand-dark mb-6 text-balance relative"
             >
@@ -41,8 +41,8 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, filter: "blur(8px)", y: 20 }}
-              animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: easeCinematic, delay: 0.3 }}
               className="text-lg md:text-xl text-brand-dark/60 font-sans tracking-wide leading-relaxed max-w-xl text-balance mb-10"
             >
@@ -65,15 +65,16 @@ export default function Hero() {
 
           <div className="lg:col-span-6 relative perspective-[1200px]">
             <motion.div
-              initial={{ scale: 1.15, rotateY: 8, opacity: 0, filter: "blur(20px)" }}
-              animate={{ scale: 1, rotateY: -2, opacity: 1, filter: "blur(0px)" }}
-              transition={{ duration: 1.8, ease: easeCinematic, delay: 0.2 }}
+              initial={{ scale: 1.05, rotateY: 5, opacity: 0 }}
+              animate={{ scale: 1, rotateY: -2, opacity: 1 }}
+              transition={{ duration: 1.5, ease: easeCinematic, delay: 0.2 }}
               style={{ y, opacity }}
               className="relative rounded-2xl overflow-hidden aspect-[4/5] object-cover shadow-2xl shadow-black/5 border border-black/5 bg-white"
             >
               <img
                 src="/imgs/img10.jpg"
                 alt="Sócio Digital Hero"
+                fetchPriority="high"
                 className="w-full h-full object-cover scale-[1.05] origin-center"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#66CDD9]/20 via-transparent to-[#F28627]/10 mix-blend-overlay" />
