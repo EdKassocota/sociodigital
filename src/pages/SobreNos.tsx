@@ -12,7 +12,7 @@ export default function SobreNos() {
         description="Conheça a missão e os valores da Sócio Digital. Somos especialistas em construir autoridade digital para o setor B2B e instituições."
       />
       {/* Intro section */}
-       <section className="relative pt-32 pb-8">
+       <section className="relative pt-24 pb-4">
         <div className="absolute top-0 right-0 w-[50vh] h-[50vh] bg-[#F28627]/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[30vh] h-[30vh] bg-[#66CDD9]/5 rounded-[40px] rotate-45 blur-[100px] pointer-events-none" />
 
@@ -34,7 +34,7 @@ export default function SobreNos() {
       </section>
 
       {/* Cinematic Image Break */}
-       <section className="w-full px-6 md:px-12 max-w-[100rem] mx-auto py-6 relative z-10">
+       <section className="w-full px-6 md:px-12 max-w-[100rem] mx-auto py-1 relative z-10">
         <motion.div
           initial={{ clipPath: "inset(0 100% 0 0)", opacity: 0 }}
           whileInView={{ clipPath: "inset(0 0% 0 0)", opacity: 1 }}
@@ -49,7 +49,7 @@ export default function SobreNos() {
       </section>
 
       {/* Manifesto / Mission */}
-       <section className="py-16 bg-white relative">
+       <section className="py-8 bg-white relative">
         <div className="absolute top-[10%] left-[5%] w-32 h-32 border border-[#66CDD9]/30 rounded-full pointer-events-none" />
         <div className="absolute bottom-[20%] right-[10%] w-16 h-16 bg-[#F28627]/10 rotate-12 pointer-events-none" />
 
