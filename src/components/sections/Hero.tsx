@@ -16,13 +16,13 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[110vh] flex flex-col justify-center overflow-hidden bg-gradient-to-br from-brand-bg via-white to-brand-bg/50 pt-24 grid-pattern"
+      className="relative min-h-[110vh] flex flex-col justify-center overflow-hidden bg-gradient-to-br from-brand-bg via-white to-brand-bg/50 pt-32 md:pt-40 grid-pattern"
     >
       {/* Background glow for atmosphere */}
       <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-[#66CDD9]/10 rounded-full blur-[120px] mix-blend-multiply opacity-60" />
       <div className="absolute bottom-[20%] left-[10%] w-[400px] h-[400px] bg-[#F28627]/10 rounded-full blur-[100px] mix-blend-multiply opacity-50" />
 
-      <div className="w-full max-w-7xl mx-auto px-6 md:px-12 z-10 relative mt-16 md:mt-24">
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-12 z-10 relative mt-24 md:mt-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
           <div className="lg:col-span-6 flex flex-col z-20">
