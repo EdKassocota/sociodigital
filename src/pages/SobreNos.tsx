@@ -12,7 +12,7 @@ export default function SobreNos() {
         description="Conheça a missão e os valores da Sócio Digital. Somos especialistas em construir autoridade digital para o setor B2B e instituições."
       />
       {/* Intro section */}
-       <section className="relative pt-48 pb-20">
+       <section className="relative pt-48 pb-0">
         <div className="absolute top-0 right-0 w-[50vh] h-[50vh] bg-[#F28627]/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[30vh] h-[30vh] bg-[#66CDD9]/5 rounded-[40px] rotate-45 blur-[100px] pointer-events-none" />
 
