@@ -22,6 +22,17 @@ export default function AbstractShapes() {
         className="absolute bottom-[20%] -right-[10%] w-[50vw] h-[50vw] max-w-[500px] max-h-[500px] rounded-[40px] bg-gradient-to-br from-[#F28627]/[0.03] to-transparent blur-[8px] mix-blend-multiply rotate-12"
       />
 
+      {/* New Shapes for richness */}
+      <motion.div 
+        style={{ y: y1, rotate: rotate2 }}
+        className="absolute top-[40%] -right-[5%] w-64 h-64 border border-[#66CDD9]/10 rounded-[60px] rotate-45"
+      />
+      
+      <motion.div 
+        style={{ y: y2 }}
+        className="absolute bottom-[10%] left-[5%] w-32 h-32 bg-[#F28627]/5 rounded-full blur-[40px]"
+      />
+
       {/* Floating accents */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -37,6 +48,10 @@ export default function AbstractShapes() {
         style={{ y: y2 }}
         className="absolute top-[30%] right-[15%] w-48 h-48 bg-[#F28627]/5 rounded-full blur-[80px]"
       />
+      
+      {/* Subtle lines */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
+           style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 0)', backgroundSize: '40px 40px' }} />
     </div>
   );
 }

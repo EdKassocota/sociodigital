@@ -4,7 +4,7 @@ import { easeCinematic } from '@/lib/utils';
 
 export default function CTA() {
   return (
-    <section className="relative py-48 bg-white overflow-hidden flex items-center justify-center text-center">
+    <section className="relative py-48 bg-white overflow-hidden flex items-center justify-center text-center grid-pattern">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand-bg via-white to-white opacity-80" />
       
       <div className="relative z-10 max-w-4xl mx-auto px-6">

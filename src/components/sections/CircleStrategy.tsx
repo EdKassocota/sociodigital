@@ -3,18 +3,18 @@ import { useRef } from 'react';
 import { easeCinematic } from '@/lib/utils';
 
 const cards = [
-  { title: "Direção Estratégica Clara", num: "01", desc: "Sabemos exatamente para onde a sua marca caminha e como vai lá chegar no ambiente digital." },
-  { title: "Comunicação Consistente", num: "02", desc: "Mensagens coesas em todos os canais, refletindo a excelência do seu serviço B2B." },
-  { title: "Maior Autoridade de Mercado", num: "03", desc: "Posicionamento como thought leader no seu setor, ditando as tendências e captando a confiança." },
-  { title: "Resultados Mensuráveis", num: "04", desc: "Decisões baseadas em dados, garantindo retorno corporativo sobre cada ação online." },
-  { title: "Ativo de Crescimento", num: "05", desc: "Transformamos likes em leads e atenção em reputação palpável na sua indústria." }
+  { title: "Direção Estratégica Clara", num: "01", desc: "Sabemos exatamente para onde a sua marca caminha e como vai lá chegar no ambiente digital.", color: "#66CDD9", darkText: true },
+  { title: "Comunicação Consistente", num: "02", desc: "Mensagens coesas em todos os canais, refletindo a excelência do seu serviço B2B.", color: "#F28627", darkText: false },
+  { title: "Maior Autoridade de Mercado", num: "03", desc: "Posicionamento como thought leader no seu setor, ditando as tendências e captando a confiança.", color: "#F2C49B", darkText: true },
+  { title: "Resultados Mensuráveis", num: "04", desc: "Decisões baseadas em dados, garantindo retorno corporativo sobre cada ação online.", color: "#F2C49B", darkText: true },
+  { title: "Ativo de Crescimento", num: "05", desc: "Transformamos likes em leads e atenção em reputação palpável na sua indústria.", color: "#FFFFFF", darkText: true }
 ];
 
 export default function Resultados() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section ref={containerRef} className="py-32 md:py-48 bg-brand-bg relative border-t border-brand-dark/5">
+    <section ref={containerRef} className="py-32 md:py-48 bg-brand-bg relative border-t border-brand-dark/5 grid-pattern">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
@@ -66,18 +66,23 @@ function Card({ card, index, total }: { card: any, index: number, total: number 
   return (
     <motion.div
       ref={cardRef}
-      style={{ opacity, scale, top: `${stickyTop}px` }}
-      className="sticky mb-8 bg-white rounded-3xl p-8 md:p-12 shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] border border-brand-dark/5 overflow-hidden flex flex-col justify-center min-h-[280px]"
+      style={{ 
+        opacity, 
+        scale, 
+        top: `${stickyTop}px`,
+        backgroundColor: card.color
+      }}
+      className={`sticky mb-8 rounded-3xl p-8 md:p-12 shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] border border-brand-dark/5 overflow-hidden flex flex-col justify-center min-h-[280px] ${card.darkText ? 'text-brand-dark' : 'text-white'}`}
     >
-      <div className="absolute top-0 right-0 p-8 text-brand-bg md:text-brand-dark/[0.03] font-display text-8xl md:text-[160px] font-bold leading-none translate-x-8 md:translate-x-12 -translate-y-4 md:-translate-y-8 select-none pointer-events-none">
+      <div className={`absolute top-0 right-0 p-8 font-display text-8xl md:text-[160px] font-bold leading-none translate-x-8 md:translate-x-12 -translate-y-4 md:-translate-y-8 select-none pointer-events-none ${card.darkText ? 'text-brand-dark/[0.03]' : 'text-white/10'}`}>
         {card.num}
       </div>
       
       <div className="relative z-10 max-w-lg">
-        <h3 className="font-display text-2xl md:text-3xl font-medium text-brand-dark mb-4 drop-shadow-sm">
+        <h3 className={`font-display text-2xl md:text-3xl font-medium mb-4 drop-shadow-sm ${card.darkText ? 'text-brand-dark' : 'text-white'}`}>
           {card.title}
         </h3>
-        <p className="font-sans text-lg md:text-xl text-brand-dark/60 leading-relaxed font-light">
+        <p className={`font-sans text-lg md:text-xl leading-relaxed font-light ${card.darkText ? 'text-brand-dark/70' : 'text-white/80'}`}>
           {card.desc}
         </p>
       </div>

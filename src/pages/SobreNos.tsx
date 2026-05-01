@@ -36,11 +36,11 @@ export default function SobreNos() {
       {/* Cinematic Image Break */}
       <section className="w-full px-6 md:px-12 max-w-[100rem] mx-auto py-12 relative z-10">
         <motion.div
-          initial={{ clipPath: "inset(0 100% 0 0)" }}
-          whileInView={{ clipPath: "inset(0 0% 0 0)" }}
-          viewport={{ once: true, margin: "-100px" }}
+          initial={{ clipPath: "inset(0 100% 0 0)", opacity: 0 }}
+          whileInView={{ clipPath: "inset(0 0% 0 0)", opacity: 1 }}
+          viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 1.5, ease: easeCinematic }}
-          className="aspect-video w-full rounded-2xl overflow-hidden relative shadow-2xl"
+          className="aspect-video w-full rounded-2xl overflow-hidden relative shadow-2xl z-20 bg-white"
         >
           <img src="/imgs/img1.jpg" alt="Equipa Sócio Digital" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent" />
@@ -79,7 +79,7 @@ export default function SobreNos() {
             transition={{ duration: 1, ease: easeCinematic, delay: 0.2 }}
             className="bg-brand-dark text-white rounded-2xl p-12 relative overflow-hidden"
           >
-            <div className="absolute top-[-50px] right-[-50px] w-[200px] h-[200px] bg-[#66CDD9]/20 blur-[60px] rounded-full point-events-none" />
+            <div className="absolute top-[-50px] right-[-50px] w-[200px] h-[200px] bg-[#66CDD9]/20 blur-[60px] rounded-full pointer-events-none" />
             <div className="absolute bottom-[-50px] left-[-30px] w-[150px] h-[150px] bg-[#F28627]/20 blur-[50px] rounded-full pointer-events-none" />
             <h2 className="font-display text-3xl font-medium mb-8 relative z-10">Valores</h2>
             <ul className="space-y-6 relative z-10">

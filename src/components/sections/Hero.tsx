@@ -14,9 +14,9 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section 
-      ref={containerRef} 
-      className="relative min-h-[110vh] flex flex-col justify-center overflow-hidden bg-gradient-to-br from-brand-bg via-white to-brand-bg/50 pt-24"
+    <section
+      ref={containerRef}
+      className="relative min-h-[110vh] flex flex-col justify-center overflow-hidden bg-gradient-to-br from-brand-bg via-white to-brand-bg/50 pt-24 grid-pattern"
     >
       {/* Background glow for atmosphere */}
       <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-[#66CDD9]/10 rounded-full blur-[120px] mix-blend-multiply opacity-60" />
@@ -24,9 +24,9 @@ export default function Hero() {
 
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 z-10 relative mt-16 md:mt-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           <div className="lg:col-span-6 flex flex-col z-20">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, filter: "blur(12px)", y: 40 }}
               animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
               transition={{ duration: 1.2, ease: easeCinematic, delay: 0.1 }}
@@ -39,27 +39,27 @@ export default function Hero() {
                 </svg>
               </span> em autoridade digital.
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, filter: "blur(8px)", y: 20 }}
               animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
               transition={{ duration: 1, ease: easeCinematic, delay: 0.3 }}
-               className="text-lg md:text-xl text-brand-dark/60 font-sans tracking-wide leading-relaxed max-w-xl text-balance mb-10"
+              className="text-lg md:text-xl text-brand-dark/60 font-sans tracking-wide leading-relaxed max-w-xl text-balance mb-10"
             >
               A Sócio Digital oferece assessoria estratégica para operações B2B globais que não têm tempo para amadorismo.
             </motion.p>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: easeCinematic, delay: 0.5 }}
             >
-               <Link to="/contactos" className="group relative px-8 py-4 bg-brand-dark overflow-hidden rounded-full inline-flex items-center gap-3">
-                 <span className="relative z-10 font-sans font-medium text-white tracking-wider text-sm uppercase">Fale Connosco</span>
-                 <div className="relative z-10 w-8 h-px bg-white/50 group-hover:w-16 group-hover:bg-[#F28627] transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]" />
-                 {/* Fill effect */}
-                 <div className="absolute inset-0 bg-brand-dark scale-x-0 origin-right transition-transform duration-500 group-hover:scale-x-100 group-hover:origin-left z-0" />
-               </Link>
+              <Link to="/contactos" className="group relative px-8 py-4 bg-brand-dark overflow-hidden rounded-full inline-flex items-center gap-3">
+                <span className="relative z-10 font-sans font-medium text-white tracking-wider text-sm uppercase">Fale Connosco</span>
+                <div className="relative z-10 w-8 h-px bg-white/50 group-hover:w-16 group-hover:bg-[#F28627] transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]" />
+                {/* Fill effect */}
+                <div className="absolute inset-0 bg-brand-dark scale-x-0 origin-right transition-transform duration-500 group-hover:scale-x-100 group-hover:origin-left z-0" />
+              </Link>
             </motion.div>
           </div>
 
@@ -71,8 +71,8 @@ export default function Hero() {
               style={{ y, opacity }}
               className="relative rounded-2xl overflow-hidden aspect-[4/5] object-cover shadow-2xl shadow-black/5 border border-black/5 bg-white"
             >
-              <img 
-                src="/imgs/img1.jpg" 
+              <img
+                src="/imgs/img10.jpg"
                 alt="Sócio Digital Hero"
                 className="w-full h-full object-cover scale-[1.05] origin-center"
               />

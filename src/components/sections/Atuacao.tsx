@@ -21,7 +21,7 @@ export default function Atuacao() {
   const imgY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
-    <section ref={containerRef} id="atuacao" className="py-32 md:py-48 relative bg-white overflow-hidden">
+    <section ref={containerRef} id="atuacao" className="py-32 md:py-48 relative bg-white overflow-hidden grid-pattern">
       <div className="absolute top-1/2 left-0 w-32 h-32 bg-[#F28627]/10 rounded-full blur-[80px]" />
       
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 relative z-10">

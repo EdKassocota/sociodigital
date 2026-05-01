@@ -82,13 +82,13 @@ export default function Navbar() {
             
             <div className="flex-1 flex flex-col items-center justify-center gap-8 relative overflow-hidden">
                {/* Abstract shapes inside menu */}
-               <div className="absolute top-1/4 left-0 w-64 h-64 bg-[#66CDD9]/10 rounded-full blur-[60px]" />
-               <div className="absolute bottom-1/4 right-0 w-64 h-64 bg-[#F28627]/10 rounded-full blur-[60px]" />
+               <div className="absolute top-1/4 left-0 w-64 h-64 bg-[#66CDD9]/10 rounded-full blur-[60px] pointer-events-none" />
+               <div className="absolute bottom-1/4 right-0 w-64 h-64 bg-[#F28627]/10 rounded-full blur-[60px] pointer-events-none" />
 
-               <Link onClick={closeMenu} to="/" className="font-display text-4xl font-medium text-brand-dark">Início</Link>
-               <Link onClick={closeMenu} to="/sobre" className="font-display text-4xl font-medium text-brand-dark">Sobre Nós</Link>
-               <Link onClick={closeMenu} to="/servicos" className="font-display text-4xl font-medium text-brand-dark">Serviços</Link>
-               <Link onClick={closeMenu} to="/contactos" className="font-display text-4xl font-medium text-brand-dark">Contactos</Link>
+               <Link onClick={closeMenu} to="/" className="font-display text-4xl font-medium text-brand-dark p-2 hover:text-brand-orange transition-colors">Início</Link>
+               <Link onClick={closeMenu} to="/sobre" className="font-display text-4xl font-medium text-brand-dark p-2 hover:text-brand-orange transition-colors">Sobre Nós</Link>
+               <Link onClick={closeMenu} to="/servicos" className="font-display text-4xl font-medium text-brand-dark p-2 hover:text-brand-orange transition-colors">Serviços</Link>
+               <Link onClick={closeMenu} to="/contactos" className="font-display text-4xl font-medium text-brand-dark p-2 hover:text-brand-orange transition-colors">Contactos</Link>
                
                <Link onClick={closeMenu} to="/contactos" className="mt-8 px-8 py-4 rounded-full bg-[#F28627] text-white font-medium text-sm tracking-wide">
                  Fale Connosco
