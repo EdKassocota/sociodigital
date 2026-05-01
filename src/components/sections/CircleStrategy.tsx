@@ -14,7 +14,7 @@ export default function Resultados() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section ref={containerRef} className="py-32 md:py-48 bg-brand-bg relative border-t border-brand-dark/5 grid-pattern">
+    <section ref={containerRef} className="py-16 md:py-24 bg-brand-bg relative border-t border-brand-dark/5 grid-pattern">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         

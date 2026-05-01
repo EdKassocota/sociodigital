@@ -9,7 +9,7 @@ export default function Trailer() {
   ];
 
   return (
-    <section className="py-32 md:py-48 bg-brand-bg relative overflow-hidden grid-pattern">
+    <section className="py-16 md:py-24 bg-brand-bg relative overflow-hidden grid-pattern">
       <div className="absolute top-1/2 left-[20%] w-64 h-64 border border-[#F28627]/20 rounded-full rotate-45 pointer-events-none" />
       <div className="absolute bottom-[10%] right-[10%] w-32 h-32 bg-[#66CDD9]/10 rounded-full blur-[40px] pointer-events-none" />
       
