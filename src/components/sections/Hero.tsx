@@ -69,14 +69,14 @@ export default function Hero() {
                animate={{ scale: 1, rotateY: -2, opacity: 1 }}
                transition={{ duration: 1.5, ease: easeCinematic, delay: 0.2 }}
                style={{ y, opacity }}
-               className="relative rounded-2xl overflow-hidden max-h-[60vh] object-cover shadow-2xl shadow-black/5 border border-black/5 bg-white"
+               className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/5 border border-black/5 bg-white max-h-[70vh]"
              >
-              <img
-                src="/imgs/img10.jpg"
-                alt="Sócio Digital Hero"
-                fetchPriority="high"
-                className="w-full h-full object-cover scale-[1.05] origin-center"
-              />
+               <img
+                 src="/imgs/img10.jpg"
+                 alt="Sócio Digital Hero"
+                 fetchPriority="high"
+                 className="w-full h-full object-contain rounded-2xl"
+               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#66CDD9]/20 via-transparent to-[#F28627]/10 mix-blend-overlay" />
             </motion.div>
           </div>
