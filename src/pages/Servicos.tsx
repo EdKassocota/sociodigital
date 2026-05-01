@@ -109,56 +109,55 @@ function ServiceBlock({ data, index }: { data: any, index: number }) {
     return (
         <section id={data.id} className="relative w-full py-24 md:py-32 lg:py-40 flex items-center justify-center overflow-hidden border-b border-black/5 last:border-0">
            <div className="w-full max-w-[90rem] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
-              
-              <div className={`lg:col-span-5 flex flex-col justify-center relative z-20 ${isEven ? 'order-2 lg:order-1' : 'order-2 lg:order-2 lg:col-start-8'}`}>
-                 <motion.div 
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-150px" }}
-                    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                 >
-                     <div className="flex items-center gap-4 mb-6">
-                        <span className="text-[#66CDD9] font-display text-xl font-medium tracking-widest block">0{index + 1}</span>
-                        <div className="w-12 h-[1px] bg-brand-dark/20" />
-                        <span className="text-[#F28627] uppercase tracking-[0.2em] text-xs font-semibold block">{data.caption}</span>
-                     </div>
-                     <h2 className="font-display text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-brand-dark font-medium leading-[1.1] mb-8 text-balance">
-                        {data.title}
-                     </h2>
-                     <p className="font-sans text-lg md:text-xl text-brand-dark/60 leading-relaxed font-light">
-                        {data.desc}
-                     </p>
-                 </motion.div>
-              </div>
 
-              <div className={`lg:col-span-7 relative z-10 w-full flex justify-center ${isEven ? 'order-1 lg:order-2 lg:justify-end' : 'order-1 lg:order-1 lg:justify-start'}`}>
-                 <motion.div 
-                    initial={{ opacity: 0, scale: 0.8, filter: "blur(20px)" }}
-                    whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                    viewport={{ once: true, margin: "-150px" }}
-                    transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                    className={`absolute ${isEven ? 'bottom-[-10%] right-[-10%] bg-[#66CDD9]/20' : 'top-[-10%] left-[-10%] bg-[#F28627]/20'} w-[30vw] h-[30vw] min-w-[300px] min-h-[300px] rounded-full blur-[80px] pointer-events-none`}
-                 />
+               <div className={`lg:col-span-5 flex flex-col justify-center relative z-20 ${isEven ? 'order-2 lg:order-1' : 'order-2 lg:order-2 lg:col-start-8'}`}>
+                  <motion.div
+                     initial={{ opacity: 0, y: 40 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true, margin: "-150px" }}
+                     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                  >
+                      <div className="flex items-center gap-4 mb-6">
+                         <span className="text-[#66CDD9] font-display text-xl font-medium tracking-widest block">0{index + 1}</span>
+                         <div className="w-12 h-[1px] bg-brand-dark/20" />
+                         <span className="text-[#F28627] uppercase tracking-[0.2em] text-xs font-semibold block">{data.caption}</span>
+                      </div>
+                      <h2 className="font-display text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-brand-dark font-medium leading-[1.1] mb-8 text-balance">
+                         {data.title}
+                      </h2>
+                      <p className="font-sans text-lg md:text-xl text-brand-dark/60 leading-relaxed font-light">
+                         {data.desc}
+                      </p>
+                  </motion.div>
+               </div>
 
-                 <motion.div 
-                    initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
-                    whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                    viewport={{ once: true, margin: "-150px" }}
-                    transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-                    className={`w-full max-w-2xl aspect-[4/5] object-cover rounded-2xl overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] relative ${isEven ? 'lg:origin-right origin-center' : 'lg:origin-left origin-center'}`}
-                 >
-                    <motion.img 
-                       style={{ y: imgY }}
-                       src={data.img} 
-                       alt={data.title} 
-                       loading="lazy"
-                       className="w-full h-[120%] object-cover absolute top-[-10%] origin-center" 
-                    />
-                    <div className={`absolute inset-0 bg-gradient-to-tr ${isEven ? 'from-[#F28627]/10' : 'from-[#66CDD9]/10'} via-transparent to-transparent mix-blend-overlay pointer-events-none`} />
-                 </motion.div>
-              </div>
+               <div className={`lg:col-span-7 relative z-10 w-full flex justify-center ${isEven ? 'order-1 lg:order-2 lg:justify-end' : 'order-1 lg:order-1 lg:justify-start'}`}>
+                  <motion.div
+                     initial={{ opacity: 0, scale: 0.8, filter: "blur(20px)" }}
+                     whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                     viewport={{ once: true, margin: "-150px" }}
+                     transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                     className={`absolute ${isEven ? 'bottom-[-10%] right-[-10%] bg-[#66CDD9]/20' : 'top-[-10%] left-[-10%] bg-[#F28627]/20'} w-[30vw] h-[30vw] min-w-[300px] min-h-[300px] rounded-full blur-[80px] pointer-events-none`}
+                  />
 
-           </div>
-        </section>
+                  <motion.div
+                     initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
+                     whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                     viewport={{ once: true, margin: "-150px" }}
+                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+                     className={`w-full max-w-2xl aspect-[4/5] object-cover rounded-2xl overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] relative ${isEven ? 'lg:origin-right origin-center' : 'lg:origin-left origin-center'}`}
+                  >
+                     <img
+                        src={data.img}
+                        alt={data.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                     />
+                     <div className={`absolute inset-0 bg-gradient-to-tr ${isEven ? 'from-[#F28627]/10' : 'from-[#66CDD9]/10'} via-transparent to-transparent mix-blend-overlay pointer-events-none`} />
+                  </motion.div>
+               </div>
+
+            </div>
+         </section>
     )
 }
