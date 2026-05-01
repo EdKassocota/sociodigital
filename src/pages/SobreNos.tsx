@@ -33,23 +33,8 @@ export default function SobreNos() {
         </div>
       </section>
 
-      {/* Cinematic Image Break */}
-       <section className="w-full px-6 md:px-12 max-w-[100rem] mx-auto py-1 relative z-10">
-        <motion.div
-          initial={{ clipPath: "inset(0 100% 0 0)", opacity: 0 }}
-          whileInView={{ clipPath: "inset(0 0% 0 0)", opacity: 1 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 1.5, ease: easeCinematic }}
-          className="aspect-video w-full rounded-2xl overflow-hidden relative shadow-2xl z-20 bg-white"
-        >
-          <img src="/imgs/img1.jpg" alt="Equipa Sócio Digital" loading="lazy" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#66CDD9]/20 to-transparent mix-blend-overlay" />
-        </motion.div>
-      </section>
-
-      {/* Manifesto / Mission */}
-       <section className="py-8 bg-white relative">
+       {/* Manifesto / Mission */}
+        <section className="pt-4 pb-8 bg-white relative">
         <div className="absolute top-[10%] left-[5%] w-32 h-32 border border-[#66CDD9]/30 rounded-full pointer-events-none" />
         <div className="absolute bottom-[20%] right-[10%] w-16 h-16 bg-[#F28627]/10 rotate-12 pointer-events-none" />
 
